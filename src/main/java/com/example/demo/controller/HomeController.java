@@ -9,16 +9,13 @@ public class HomeController {
     public String home() {
         return "<h3>Welcome to My website. Go to one of our web pages:</h3>" +
                 "<p>" +
-                "   <a href=\"/login\">Login Page" +
+                "<a href=\"/login\">Login Page" +
                 "</p>" +
                 "<p>" +
                 "   <a href=\"/logout\">Logout Page" +
                 "</p>" +
                 "<p>" +
-                "   <a href=\"/coincap\">Bitcoin Price" +
-                "</p>" +
-                "<p>" +
-                "   <a href=\"/status\">Admins Only!" +
+                "   <a href=\"/api/coincap\">Bitcoin Price" +
                 "</p>"
                 ;
     }

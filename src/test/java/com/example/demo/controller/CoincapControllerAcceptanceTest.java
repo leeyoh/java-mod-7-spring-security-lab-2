@@ -20,14 +20,14 @@ class CoincapControllerAcceptanceTest {
     @WithMockUser(username = "fakeuser", authorities = "admin")
     @Test
     void getBitcoinPrice() throws Exception {
-        mockMvc.perform(get("/coincap"))
+        mockMvc.perform(get("/api/coincap"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
     @WithMockUser(username = "fakeuser", authorities = "admin")
     @Test
     void getCryptoPrice() throws Exception {
-        mockMvc.perform(get("/coincap/ethereum"))
+        mockMvc.perform(get("/api/coincap/ethereum"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
